@@ -4,7 +4,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:black;
+    background-color:gray;
 }
 .nav_logo{
     object-fit: contain;
@@ -105,3 +105,4 @@ body{
 .nav_black{
     background-color: #111;
 }
+
