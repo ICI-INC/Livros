@@ -56,5 +56,22 @@
     })
   </script>
 
+  <script src="https:                                                  
+<canvas id="pdfViewer"></canvas>
+
+<script>
+  pdfjsLib.getDocument('Livros/O Codigo Da Vinci Dan Brown.pdf').then(function(pdf) {
+    pdf.getPage(1).then(function(page) {
+      var canvas = document.getElementById('pdfViewer');
+      var context = canvas.getContext('2d');
+      var viewport = page.getViewport({ scale: 1.5 });
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+      page.render({ canvasContext: context, viewport: viewport });
+    });
+  });
+</script>
+
+
 </body>
 </html>
